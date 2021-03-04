@@ -1,4 +1,6 @@
 .mobile-menu {
+  opacity: 0;
+  visibility: hidden;
   position: fixed;
   top: 0;
   left: 50%;
@@ -20,6 +22,8 @@
 }
 
 .mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
   transform: translateX(-50%) translateY(0%);
 }
 
