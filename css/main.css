@@ -438,6 +438,12 @@ a {
   background-size: cover;
 }
 
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 92dpi) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(51, 58, 47, 0.4), rgba(51, 58, 47, 0.4)), url(../images/hero_img/hero-bg-mobile@2x.jpg);
+  }
+}
+
 .hero-title-container {
   display: flex;
   justify-content: center;
@@ -462,6 +468,10 @@ a {
 .features {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.features-list-item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .icon-features-container {

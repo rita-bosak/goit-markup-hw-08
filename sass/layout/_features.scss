@@ -22,6 +22,12 @@
 // //   flex-basis: calc(100% / 4 - var(--card-set-gap));
 // // }
 
+.features-list-item {
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
 .icon-features-container {
   height: 120px;
   max-width: 450px;
