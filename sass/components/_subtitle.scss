@@ -1,8 +1,10 @@
 .title {
-  margin-bottom: 50px;
+  // margin-bottom: 50px;
+  margin-bottom: 30px;
 
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.166;
+  // font-weight: 700;
+  // font-size: 36px;
+  // line-height: 1.166;
+  @include font(700, 28px, 33px);
   text-align: center;
 }
