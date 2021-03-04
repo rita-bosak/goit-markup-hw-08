@@ -1,4 +1,5 @@
 .container {
+  width: 100%;
   max-width: 480px;
   margin-left: auto;
   margin-right: auto;
@@ -14,8 +15,9 @@
   //   align-items: baseline;
   // }
 
-  // .header & {
-  //   display: flex;
-  //   align-items: center;
-  // }
+  .header & {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
