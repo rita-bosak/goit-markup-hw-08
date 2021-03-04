@@ -71,21 +71,17 @@ a {
 }
 
 .container {
-  width: 1200px;
+  max-width: 480px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
 
-.footer .container {
-  display: flex;
-  align-items: baseline;
-}
-
-.header .container {
-  display: flex;
-  align-items: center;
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
 }
 
 .logo {
@@ -224,14 +220,13 @@ a {
 }
 
 /* -------NAV-LIST--------- */
-.nav {
+.nav-list {
   display: flex;
   align-items: center;
 }
 
-.nav-list {
-  display: flex;
-  align-items: center;
+.nav-list-item {
+  display: none;
 }
 
 .nav-list-item:not(:last-child) {
@@ -271,7 +266,7 @@ a {
 
 /* ----------HEADER-CONTACT----------- */
 .header-contact-list {
-  display: flex;
+  display: none;
   align-items: center;
   margin-left: auto;
   font-weight: 500;

@@ -5,8 +5,8 @@
 /* -------NAV-LIST--------- */
 
 .nav {
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
 }
 
 .nav-list {
@@ -15,6 +15,7 @@
 }
 
 .nav-list-item {
+  display: none;
   &:not(:last-child) {
     margin-right: 50px;
   }
@@ -59,7 +60,7 @@
 /* ----------HEADER-CONTACT----------- */
 
 .header-contact-list {
-  display: flex;
+  display: none;
   align-items: center;
   margin-left: auto;
 
