@@ -2,18 +2,19 @@
   border-bottom: 1px solid #ececec;
 }
 
-.mobile-menu-btn {
+.mobile-burger-btn {
   width: 40px;
   height: 40px;
   background-color: transparent;
   border: transparent;
 }
 
-.mobile-menu-icon {
+.mobile-burger-icon {
   width: 24px;
   height: 16px;
   fill: #000000;
 }
+
 /* -------NAV-LIST--------- */
 
 .nav {
@@ -23,12 +24,12 @@
 }
 
 .nav-list {
-  display: flex;
-  align-items: center;
+  display: none;
+  // display: flex;
+  // align-items: center;
 }
 
 .nav-list-item {
-  display: none;
   &:not(:last-child) {
     margin-right: 50px;
   }
@@ -74,6 +75,7 @@
 
 .header-contact-list {
   display: none;
+
   align-items: center;
   margin-left: auto;
 
@@ -83,6 +85,8 @@
 }
 
 .header-contact-list-item {
+  display: none;
+
   &:not(:last-child) {
     margin-right: 50px;
   }
