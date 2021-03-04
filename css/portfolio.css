@@ -107,6 +107,7 @@ a {
 .logo.white {
   display: inline-block;
   margin-bottom: 20px;
+  text-align: center;
   color: var(--primary-white-color);
 }
 
@@ -537,19 +538,18 @@ a {
   padding-bottom: 60px;
   display: flex;
   align-items: center;
+  flex-direction: column;
+  justify-content: center;
   background-color: var(--secondary-bg-color);
 }
 
-.footer-wrapper {
-  margin-right: 70px;
-}
-
 .footer-address-container {
-  width: 231px;
+  margin-bottom: 60px;
 }
 
 .address-text {
   margin-bottom: 9px;
+  text-align: center;
   color: var(--primary-white-color);
   font-style: normal;
   line-height: 1.71;
@@ -558,6 +558,7 @@ a {
 .address-list-link {
   display: flex;
   flex-direction: column;
+  text-align: center;
   color: var(--footer-text-color);
   font-style: normal;
   line-height: 1.71;
@@ -573,13 +574,13 @@ a {
 }
 
 .footer-social-container {
-  width: 206px;
-  margin-right: 92px;
+  margin-bottom: 60px;
 }
 
 .footer-text {
   display: block;
   margin-bottom: 20px;
+  text-align: center;
   color: var(--primary-white-color);
   font-weight: 700;
   text-transform: uppercase;
@@ -599,12 +600,21 @@ a {
   fill: var(--primary-white-color);
 }
 
+.footer-form-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .footer-form-box {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   background-color: transparent;
   width: 355px;
   height: 50px;
   padding: 15px;
-  margin-right: 10px;
+  margin-bottom: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
