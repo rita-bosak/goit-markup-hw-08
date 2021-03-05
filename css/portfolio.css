@@ -289,6 +289,20 @@ a {
   margin-right: -8px;
 }
 
+@media screen and (min-width: 768px) {
+  .filter-btn-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filter-btn-list {
+    margin-bottom: 50px;
+  }
+}
+
 .filter-btn-item {
   margin-right: 8px;
   margin-bottom: 15px;
@@ -552,6 +566,22 @@ a {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding-top: 100px;
+    padding-bottom: 94px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .examples-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: calc(-1 * var(--card-set-gap));
+    margin-bottom: calc(-1 * var(--card-set-gap));
+  }
+}
+
 .examples-list-item {
   background: var(--primary-white-color);
   border: 1px solid #eeeeee;
@@ -559,6 +589,20 @@ a {
 
 .examples-list-item:not(:last-child) {
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .examples-list-item {
+    margin-right: var(--card-set-gap);
+    margin-bottom: var(--card-set-gap);
+    flex-basis: calc(100% / 2 - var(--card-set-gap));
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .examples-list-item {
+    flex-basis: calc(100% / 3 - var(--card-set-gap));
+  }
 }
 
 .examples-list-link {
@@ -593,6 +637,12 @@ a {
 .examples-list-link:hover .overlay,
 .examples-list-link:focus .overlay {
   transform: translateY(0%);
+}
+
+@media screen and (min-width: 1200px) {
+  .overlay {
+    padding: 63px 24px;
+  }
 }
 
 .examples-list-title {

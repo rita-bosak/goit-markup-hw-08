@@ -1,11 +1,20 @@
 .filter-btn-list {
   display: flex;
-  // justify-content: center;
+
   justify-content: start;
   flex-wrap: wrap;
-  // margin-bottom: 50px;
+
   margin-bottom: 25px;
   margin-right: -8px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
 .filter-btn-item {
