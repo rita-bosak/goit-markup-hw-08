@@ -697,7 +697,6 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 450px;
 }
 
 .footer-form-box {
@@ -705,6 +704,7 @@ a {
   margin-left: auto;
   margin-right: auto;
   background-color: transparent;
+  width: 450px;
   height: 50px;
   padding: 15px;
   margin-bottom: 20px;
@@ -750,7 +750,7 @@ a {
   transform: translate(-50%, -50%) scale(1);
   opacity: 1;
   width: 450px;
-  height: min-content;
+  max-height: 609px;
   overflow: scroll;
   padding: 40px;
   background-color: #ffffff;
@@ -897,7 +897,7 @@ a {
 }
 
 .policy {
-  text-align: start;
+  justify-content: start;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.167;

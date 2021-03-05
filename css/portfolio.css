@@ -248,27 +248,27 @@ a {
 
 .filter-btn-list {
   display: flex;
+  justify-content: start;
   flex-wrap: wrap;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
+  margin-right: -8px;
 }
 
-.filter-btn-item:nth-child(3n) {
-  margin-bottom: 15px;
-}
-
-.filter-btn-item:not(:last-child) {
+.filter-btn-item {
   margin-right: 8px;
+  margin-bottom: 15px;
 }
 
 .filter-btn {
   padding-top: 6px;
   padding-bottom: 6px;
-  padding-right: 24px;
-  padding-left: 24px;
+  padding-right: 22px;
+  padding-left: 22px;
   text-align: center;
   justify-content: center;
   border-radius: 4px;
   border: transparent;
+  background-color: #f5f4fa;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -606,7 +606,6 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 450px;
 }
 
 .footer-form-box {
@@ -614,6 +613,7 @@ a {
   margin-left: auto;
   margin-right: auto;
   background-color: transparent;
+  width: 450px;
   height: 50px;
   padding: 15px;
   margin-bottom: 20px;
