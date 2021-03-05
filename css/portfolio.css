@@ -85,6 +85,13 @@ a {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .container {
+    width: 100%;
+    max-width: 768px;
+  }
+}
+
 .header .container {
   display: flex;
   align-items: center;
@@ -104,8 +111,20 @@ a {
   color: var(--primary-text-color);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .logo.black {
+    margin-right: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo.black {
+    margin-right: 93px;
+  }
+}
+
 .logo.white {
-  display: inline-block;
+  display: block;
   margin-bottom: 20px;
   text-align: center;
   color: var(--primary-white-color);
@@ -359,6 +378,12 @@ a {
   border: transparent;
 }
 
+@media screen and (min-width: 768px) {
+  .mobile-burger-btn {
+    display: none;
+  }
+}
+
 .mobile-burger-icon {
   width: 24px;
   height: 16px;
@@ -371,8 +396,24 @@ a {
 }
 
 /* -------NAV-LIST--------- */
+@media screen and (min-width: 768px) {
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
 .nav-list {
   display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .nav-list-item:not(:last-child) {
@@ -413,26 +454,26 @@ a {
 /* ----------HEADER-CONTACT----------- */
 .header-contact-list {
   display: none;
-  align-items: center;
-  margin-left: auto;
-  font-weight: 500;
-  line-height: 1.142;
-  letter-spacing: 0.02em;
 }
 
-.header-contact-list-item {
-  display: none;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header-contact-list {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    font-weight: 500;
+    line-height: 1.142;
+    letter-spacing: 0.02em;
+  }
 }
 
 .header-contact-list-item:not(:last-child) {
-  margin-right: 50px;
+  margin-bottom: 10px;
 }
 
 .header-contact-list-item .link {
   display: flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
   color: var(--secondary-text-color);
   transition: color var(--transition-duration) var(--transition-timing-function);
 }

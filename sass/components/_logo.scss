@@ -9,13 +9,20 @@
   &.black {
     padding-top: 16px;
     padding-bottom: 16px;
-    // margin-right: 93px;
 
     color: var(--primary-text-color);
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      margin-right: 88px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 93px;
+    }
   }
 
   &.white {
-    display: inline-block;
+    display: block;
     margin-bottom: 20px;
     text-align: center;
 

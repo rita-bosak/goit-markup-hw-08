@@ -7,6 +7,10 @@
   height: 40px;
   background-color: transparent;
   border: transparent;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .mobile-burger-icon {
@@ -22,15 +26,22 @@
 
 /* -------NAV-LIST--------- */
 
-// .nav {
-//   display: flex;
-//   align-items: center;
-// }
+.nav {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
 
 .nav-list {
   display: none;
-  // display: flex;
-  // align-items: center;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .nav-list-item {
@@ -80,27 +91,32 @@
 .header-contact-list {
   display: none;
 
-  align-items: center;
-  margin-left: auto;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
 
-  font-weight: 500;
-  line-height: 1.142;
-  letter-spacing: 0.02em;
+    font-weight: 500;
+    line-height: 1.142;
+    letter-spacing: 0.02em;
+  }
 }
 
 .header-contact-list-item {
-  display: none;
+  // display: none;
 
+  // &:not(:last-child) {
+  //   margin-right: 50px;
   &:not(:last-child) {
-    margin-right: 50px;
+    margin-bottom: 10px;
   }
 }
 
 .header-contact-list-item .link {
   display: flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  // padding-top: 32px;
+  // padding-bottom: 32px;
 
   color: var(--secondary-text-color);
 
