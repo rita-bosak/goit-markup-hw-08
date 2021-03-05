@@ -116,7 +116,7 @@ a {
 }
 
 .modal-btn {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   text-align: center;
   border: transparent;
@@ -138,7 +138,6 @@ a {
 }
 
 .modal-btn.user-form-btn {
-  display: block;
   margin-left: auto;
   margin-right: auto;
 }
@@ -205,6 +204,11 @@ a {
   width: 24px;
   height: 16px;
   fill: #000000;
+}
+
+.mobile-burger-btn:hover .mobile-burger-icon,
+.mobile-burger-btn:focus .mobile-burger-icon {
+  fill: var(--accent-color);
 }
 
 /* -------NAV-LIST--------- */
@@ -429,6 +433,7 @@ a {
   display: flex;
   align-items: center;
   height: 400px;
+  width: 100%;
   max-width: 480px;
   margin-left: auto;
   margin-right: auto;
@@ -688,10 +693,11 @@ a {
   fill: var(--primary-white-color);
 }
 
-.footer-form-wrapper {
+.footer-form {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 450px;
 }
 
 .footer-form-box {
@@ -699,7 +705,6 @@ a {
   margin-left: auto;
   margin-right: auto;
   background-color: transparent;
-  width: 355px;
   height: 50px;
   padding: 15px;
   margin-bottom: 20px;
@@ -744,8 +749,9 @@ a {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   opacity: 1;
-  width: 528px;
-  height: 580px;
+  width: 450px;
+  height: min-content;
+  overflow: scroll;
   padding: 40px;
   background-color: #ffffff;
   transition: all var(--transition-duration) var(--transition-timing-function);
@@ -857,8 +863,8 @@ a {
 
 .checkbox-label {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-wrap: nowrap;
+  justify-content: start;
   margin-bottom: 30px;
   color: var(--secondary-text-color);
 }
@@ -885,8 +891,15 @@ a {
 }
 
 .checkbox-link {
-  width: max-content;
-  margin-left: 3px;
+  display: inline;
+  margin-left: 1px;
   color: var(--accent-color);
+}
+
+.policy {
+  text-align: start;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.167;
 }
 /*# sourceMappingURL=main.css.map */

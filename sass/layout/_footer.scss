@@ -83,7 +83,7 @@
   fill: var(--primary-white-color);
 }
 
-.footer-form-wrapper {
+.footer-form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -94,7 +94,8 @@
   margin-left: auto;
   margin-right: auto;
   background-color: transparent;
-  width: 355px;
+  // width: 355px;
+  width: 450px;
   height: 50px;
   padding: 15px;
   // margin-right: 10px;

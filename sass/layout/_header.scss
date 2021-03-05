@@ -13,6 +13,11 @@
   width: 24px;
   height: 16px;
   fill: #000000;
+
+  .mobile-burger-btn:hover &,
+  .mobile-burger-btn:focus & {
+    fill: var(--accent-color);
+  }
 }
 
 /* -------NAV-LIST--------- */

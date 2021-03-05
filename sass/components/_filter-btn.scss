@@ -1,10 +1,16 @@
 .filter-btn-list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  // justify-content: center;
+  flex-wrap: wrap;
+  // margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .filter-btn-item {
+  &:nth-child(3n) {
+    margin-bottom: 15px;
+  }
+
   &:not(:last-child) {
     margin-right: 8px;
   }

@@ -5,8 +5,11 @@
   transform: translate(-50%, -50%) scale(1);
   opacity: 1;
 
-  width: 528px;
-  height: 580px;
+  // width: 528px;
+  // height: 580px;
+  width: 450px;
+  height: min-content;
+  overflow: scroll;
   padding: 40px;
   background-color: #ffffff;
   transition: all var(--transition-duration) var(--transition-timing-function);

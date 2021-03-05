@@ -22,10 +22,10 @@
     
                 <ul class="nav-list list">
                     <li class="nav-list-item">
-                        <a class="nav-list-link link" href="./">Студия</a>
+                        <a class="nav-list-link current-link link" href="./">Студия</a>
                     </li>
                     <li class="nav-list-item">
-                        <a class="nav-list-link current-link link" href="./portfolio.html">Портфолио</a>
+                        <a class="nav-list-link link" href="./portfolio.html">Портфолио</a>
                     </li>
                     <li class="nav-list-item">
                         <a class="nav-list-link link" href="#">Контаты</a>
@@ -44,7 +44,7 @@
                 </li>
     
                 <li class="header-contact-list-item">
-                    <a class="link tel" href="tel:+380961111111">
+                    <a class="link" href="tel:+380961111111">
                         <svg class="icon-tel">
                             <use href="./images/sprite.svg#smartphone"></use>
                         </svg>
@@ -53,6 +53,61 @@
                 </li>
             </ul>
     
+            <button type="button" class="mobile-burger-btn" data-menu-button>
+                <svg class="mobile-burger-icon">
+                    <use href="./images/sprite.svg#mobile-menu"></use>
+                </svg>
+            </button>
+            <div class="mobile-menu" data-menu>
+                <button type="button" class="menu-close-btn" data-menu-close>
+                    <svg class="menu-close-icon">
+                        <use href="./images/sprite.svg#mobile-menu-close"></use>
+                    </svg>
+                </button>
+    
+                <nav class="nav-mobile">
+                    <ul class="nav-mobile-list list">
+                        <li class="nav-mobile-item">
+                            <a href="./" class="nav-mobile-link link">Студия</a>
+                        </li>
+                        <li class="nav-mobile-item">
+                            <a href="./portfolio.html" class="nav-mobile-link link">Портфолио</a>
+                        </li>
+                        <li class="nav-mobile-item">
+                            <a href="#" class="nav-mobile-link link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+    
+                <ul class="mobile-contact-list list">
+                    <li class="mobile-contact-item">
+                        <a class="mobile-contact-tel link" href="tel:+380961111111">
+                            +38 096 111 11 11
+                        </a>
+                    </li>
+                    <li class="mobile-contact-item">
+                        <a class="mobile-contact-mail link" href="mailto:info@devstudio.com">
+                            info@devstudio.com
+                        </a>
+                    </li>
+                </ul>
+    
+                <ul class="mobile-social-list list">
+                    <li class="mobile-social-item">
+                        <a href="#" class="mobile-social-link link">Instagram</a>
+                    </li>
+                    <li class="mobile-social-item">
+                        <a href="#" class="mobile-social-link link">Twitter</a>
+                    </li>
+                    <li class="mobile-social-item">
+                        <a href="#" class="mobile-social-link link">Facebook</a>
+                    </li>
+                    <li class="mobile-social-item">
+                        <a href="#" class="mobile-social-link link">LinkedIn</a>
+                    </li>
+    
+                </ul>
+            </div>
         </div>
     </header>
     <main>
@@ -365,7 +420,7 @@
                         <span class="footer-text">Подпишитесь на рассылку</span>
                         <input type="email" name="user-subscribe-mail" placeholder="E-mail" class="footer-form-box">
                     </label>
-                    <button type="submit" class="modal-btn">
+                    <button type="submit" class="modal-btn user-form-btn">
                         Подписаться
                         <svg class="footer-form-btn-icon">
                             <use href="./images/sprite.svg#send"></use>
