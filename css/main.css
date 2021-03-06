@@ -847,6 +847,7 @@ a {
 
 @media screen and (min-width: 1200px) {
   .clients-list-item {
+    width: 170px;
     flex-basis: calc(100% / 6 - var(--card-set-gap));
   }
 }
@@ -1016,7 +1017,7 @@ a {
 
 .footer-form-box {
   background-color: transparent;
-  width: 450px;
+  width: 320px;
   height: 50px;
   padding: 15px;
   margin-bottom: 20px;
