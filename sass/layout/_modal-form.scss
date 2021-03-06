@@ -112,6 +112,8 @@
 }
 
 .policy {
-  justify-content: start;
-  @include font(400, 12px, 14px);
+  @media screen and (max-width: 1199px) {
+    justify-content: start;
+    @include font(400, 12px, 14px);
+  }
 }
