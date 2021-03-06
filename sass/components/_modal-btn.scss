@@ -28,4 +28,14 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  &.footer-mobile-btn {
+    @media screen and (max-width: 1199px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @media screen and (min-width: 1200px) {
+      display: inline-flex;
+    }
+  }
 }
