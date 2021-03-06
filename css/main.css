@@ -1105,7 +1105,8 @@ a {
 @media screen and (min-width: 1200px) {
   .modal {
     max-width: 528px;
-    height: 580px;
+    max-height: 580px;
+    overflow: visible;
   }
 }
 
