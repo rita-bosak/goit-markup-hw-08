@@ -50,7 +50,7 @@
   height: 100%;
   padding: 77px 24px;
   opacity: 0;
-
+  overflow-y: scroll;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 
@@ -66,6 +66,10 @@
   .examples-list-link:focus & {
     opacity: 0.9;
     transform: translateY(0%);
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 415px) {
+    padding: 24px 24px;
   }
 
   @media screen and (min-width: 1200px) {
