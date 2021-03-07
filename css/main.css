@@ -334,7 +334,7 @@ a {
 
 .current-link::after {
   position: absolute;
-  bottom: -2px;
+  bottom: -1px;
   right: 0;
   display: block;
   content: "";
