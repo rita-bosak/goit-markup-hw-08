@@ -666,7 +666,7 @@ a {
   height: 100%;
   padding: 77px 24px;
   opacity: 0;
-  overflow-y: scroll;
+  overflow-y: auto;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   font-size: 18px;
