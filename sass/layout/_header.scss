@@ -2,28 +2,6 @@
   border-bottom: 1px solid #ececec;
 }
 
-.mobile-burger-btn {
-  width: 40px;
-  height: 40px;
-  background-color: transparent;
-  border: transparent;
-
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
-}
-
-.mobile-burger-icon {
-  width: 24px;
-  height: 16px;
-  fill: #000000;
-
-  .mobile-burger-btn:hover &,
-  .mobile-burger-btn:focus & {
-    fill: var(--accent-color);
-  }
-}
-
 /* -------NAV-LIST--------- */
 
 .nav {
@@ -34,7 +12,7 @@
   }
 }
 
-.nav-list {
+.nav__list {
   display: none;
 
   @media screen and (min-width: 768px) {
@@ -44,13 +22,13 @@
   }
 }
 
-.nav-list-item {
+.nav__item {
   &:not(:last-child) {
     margin-right: 50px;
   }
 }
 
-.nav-list-link {
+.nav__link {
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -67,7 +45,7 @@
   }
 }
 
-.current-link {
+.nav__link--current-link {
   position: relative;
 
   color: var(--accent-color);
@@ -107,7 +85,7 @@
   }
 }
 
-.header-contact-list-item {
+.header-contact-list__item {
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     &:not(:last-child) {
       margin-bottom: 10px;
@@ -121,7 +99,7 @@
   }
 }
 
-.header-contact-list-item .link {
+.header-contact-list__link {
   display: flex;
   align-items: center;
 
@@ -149,8 +127,8 @@
 
   transition: fill var(--transition-duration) var(--transition-timing-function);
 
-  .header-contact-list-item .link:hover &,
-  .header-contact-list-item .link:focus & {
+  .header-contact-list__link:hover &,
+  .header-contact-list__link:focus & {
     fill: var(--accent-color);
   }
 }
@@ -162,8 +140,8 @@
 
   transition: fill var(--transition-duration) var(--transition-timing-function);
 
-  .header-contact-list-item .link:hover &,
-  .header-contact-list-item .link:focus & {
+  .header-contact-list__link:hover &,
+  .header-contact-list__link:focus & {
     fill: var(--accent-color);
   }
 }
