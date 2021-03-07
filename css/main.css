@@ -777,7 +777,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     margin-right: calc(-1 * var(--card-set-gap));
-    margin-bottom: calc(-1 * var(--card-set-gap));
+    margin-bottom: calc(-1 * 29);
   }
 }
 
