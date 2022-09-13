@@ -1,1 +1,1 @@
-# goit-markup-hw-08
+Final version of the individual project. Add adaptivity using "mobile-first" approach
